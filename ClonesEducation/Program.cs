@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClonesEducation.Services;
+using System;
 
 namespace ClonesEducation
 {
@@ -6,7 +7,12 @@ namespace ClonesEducation
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var _educationService = new EducationService();
+
+            _educationService.StartLearning(0, 20);
+            _educationService.ShowProgress();
+
+            Console.ReadKey();
         }
     }
 }
