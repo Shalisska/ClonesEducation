@@ -8,5 +8,7 @@ namespace ClonesEducation.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+        public List<StorageResource> StorageResources { get; set; }
     }
 }
